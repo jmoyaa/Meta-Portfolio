@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fanmade Avatar Website - Meta</title>
+    <meta name="Description" content="Avatar: The Last Airbender Live Action | Netflix">
+    <meta name="Author" content="Avatar:The Lat Aiebender | Netflix">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <img src='./8.png'> 
+    </header>
+
+    <nav> 
+        <ul> 
+            <li> <a href="home.html">HOME</a> </li>
+            <li> <a  href="character.html">CHARACTER</a> </li>
+            <li> <a href="contact.html">CONTACT</a> </li>
+            <li> <a href="info.html">INFO</a> </li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <div>
+        <img class="promotion_image" src="./3.png">
+        </div>                                                             
+       
+
+        <section>
+            <article> 
+                <img class="article image1" src="./4.png">
+                <h1> Join the Avatarverse</h1>
+                <p> Join the community and meet new friends.</p>
+            </article>                                                             
+        </section>
+
+        <section>
+            <article> 
+                <img class="article image2" src="./5.png">
+                <h1> Characters</h1>
+                <p> Meet the characters</p>
+            </article>                                                             
+        </section>
+
+        <section>
+            <article> 
+                <img class="article image3" src="./6.png">
+                <h1> Trailer</h1>
+                <p> Watch the trailer</p>
+            </article>                                                             
+        </section>
+
+        <section>
+            <article> 
+                <img class="article image4" src="./7.png">
+                <h1> About Avatar</h1>
+                <p> What is Avatar?</p>
+            </article>                                                             
+        </section>
+    </main>
+
+    <section class="trailer-section">
+        <article> 
+            <h1 style="text-align: center; font-size: 4rem;">TRAILER</h1>
+            <!-- Embed YouTube video using an iframe -->
+            <iframe 
+                src="https://www.youtube.com/embed/waJKJW_XU90?si=-hv9gc1AbKqOfcyr" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+                id="trailerVideo" 
+            ></iframe>           
+        </article>
+    </section>
+    
+    <script>
+        var trailerVideo = document.getElementById('trailerVideo');
+
+        function playVideo() {
+            trailerVideo.src += "&autoplay=1";
+        }
+
+        window.onload = playVideo;
+    </script>
+
+    <footer>
+        <div>
+            <img src="./8.png">
+        </div>
+
+        <div>
+            <p> © Avatar: The Last Airbender | Netflix 2023 </p>
+        </div>
+    </footer>
+</body>
+</html>
